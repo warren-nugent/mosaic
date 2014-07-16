@@ -39,7 +39,7 @@
 			
 				$(window).load(function(){
 					// IE transparency fade fix
-					if(base.options.options.animation == 'fade' && $(base.options.overlay, base.el).css('opacity') == 0 ) $(base.options.overlay, base.el).css('filter', 'alpha(opacity=0)');
+					if(base.options.animation == 'fade' && $(base.options.overlay, base.el).css('opacity') == 0 ) $(base.options.overlay, base.el).css('filter', 'alpha(opacity=0)');
 					
 					$(base.options.overlay, base.el).fadeIn(200, function(){
 						$(base.options.backdrop, base.el).fadeIn(200);
@@ -48,8 +48,8 @@
 					base.allow_hover();
 				});
 			}else{
-				$(base.options.backdrop, base.el).show();
-				$(base.options.overlay , base.el).show();
+				$(base.options.backdrop, base.el).hide();
+				$(base.options.overlay , base.el).hide();
 				base.allow_hover();
 			}
         };
